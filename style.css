@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+.NavBar {
+  width: 100%;
+  height: 90px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+
+  top: 0;
+}
+
+nav .logo img {
+  width: 148px;
+  height: 45px;
+}
+.signIN {
+  align-items: center;
+}
+.signIN button {
+  width: 100px;
+  height: 40px;
+  background-color: #c11119;
+  z-index: 1;
+}
+.si .button1 {
+  background-color: #e50914;
+  font-weight: bolder;
+  float: right;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background: url(Img/bg_img.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  z-index: 1;
+  overflow-y: hidden;
+}
+.header-content input {
+  height: 7vh;
+  width: 25vw;
+  background-color: #131313;
+  border-radius: 5px;
+  border-color: white;
+  background: transparent;
+  color: white;
+}
+.header-content button {
+  height: 7vh;
+  width: 150px;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  background-color: #c11119;
+}
+.header-content h1 {
+  font-weight: 800;
+  font-size: 2.5em;
+}
+.header-content h3 {
+  font-weight: 400;
+}
+
+.headings p {
+  font-size: 50px;
+}
+.headings h1 {
+  font-weight: bolder;
+}
+
+.Email-signup {
+  max-width: 30vw;
+  height: 8vh;
+  flex-wrap: wrap;
+  border-radius: 6px;
+  border-color: white;
+  background-color: #0f0f0f;
+}
+
+.Email-signup::placeholder {
+  color: white;
+  font-weight: 600;
+}
+
+.languagetop {
+  border: none;
+  width: 126px;
+  height: 32px;
+  margin-right: 15px;
+  border-radius: 5px;
+  background-color: #000;
+  opacity: 0.5;
+  color: white;
+  border: 2px solid #373839;
+  z-index: 1;
+}
+.bt {
+  font-weight: 600;
+  font-size: 1.4em;
+
+  background-color: #c11119;
+}
+.underline {
+  width: 100%;
+  height: 8px;
+  background-color: gray;
+}
+.inner-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.contact {
+  margin: 0 0 15px 0;
+}
+footer a {
+  color: #b3b3b3;
+  text-decoration: underline 1px solid #b3b3b3;
+}
+.video-1 {
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-width: 28%;
+  max-height: 70%;
+  position: absolute;
+  top: 115%;
+  left: 65%;
+}
+.video img {
+  z-index: 2;
+}
+
+.bottom-search {
+  display: flex;
+  justify-content: center;
+}
+.bottom-input {
+  margin: 15px 0;
+  width: 100vw;
+}
+footer {
+  padding-block: 80px;
+}
+.link-column {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+.footer-container {
+  display: flex;
+
+  justify-content: space-between;
+}
+.languagebottom {
+  border: none;
+  width: 126px;
+  height: 32px;
+  margin-right: 15px;
+  border-radius: 5px;
+  background-color: #000;
+  opacity: 0.5;
+  color: white;
+  border: 2px solid #373839;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1200px) {
+  .btn {
+    margin: 4px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .languagetop {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .inner-section {
+    flex-direction: column;
+    margin: 40px 0;
+  }
+  .video img {
+    width: 50vw;
+  }
+  .text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header-content input {
+    width: 90%;
+    margin-bottom: 4px;
+  }
+}
